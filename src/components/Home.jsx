@@ -1,7 +1,6 @@
 import React from "react";
 import useFetch from "../hooks/useFetch";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function SectionFilter() {
@@ -79,7 +78,7 @@ export default function SectionFilter() {
                 <div>
                   <h2>{newsItem.headline.main}</h2>
                   <button className="read">
-                    <a href={newsItem.web_url} target="_blank">
+                    <a href={newsItem.web_url} target="_blank" rel="noreferrer">
                       Read
                     </a>
                   </button>

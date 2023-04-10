@@ -1,6 +1,5 @@
 import React from "react";
 import useFetch from "../hooks/useFetch";
-import { Link } from "react-router-dom";
 import{motion} from 'framer-motion'
 export default function SectionFilter({section}) {
   const apiKey = "xLJprHBYSd1NMIz05Y3h3ccpXXBwZhs3";
@@ -54,7 +53,7 @@ export default function SectionFilter({section}) {
               <div>
                 <h2>{newsItem.title}</h2>
                 <button className="read">
-                  <a href={newsItem.url} target="_blank">
+                  <a href={newsItem.url} target="_blank" rel="noreferrer">
                     Read
                   </a>
                 </button>
