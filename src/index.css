@@ -157,7 +157,6 @@ header ul a.active{
 }
 .search input {
   border: none;
-  border-radius: none;
   width: 100%;
   padding: 1rem 0 1rem 1rem;
   font-family: "Lato", sans-serif;
@@ -171,7 +170,7 @@ header ul a.active{
   color: #fff;
   border-radius: 0px;
   right: -1rem;
-  bottom: 0;
+  bottom: 2px;
 }
 .back-to-top {
   position: fixed;
