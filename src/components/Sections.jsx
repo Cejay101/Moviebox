@@ -36,7 +36,13 @@ export default function SectionFilter({section}) {
     >
       {isLoading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
-      <ul className="news-grid">
+      <motion.ul
+        variants={varient}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+        className="news-grid"
+      >
         {news.map((newsItem) => {
           const imageUrl = newsItem.multimedia
             ? getImageUrl(newsItem.multimedia)
@@ -59,7 +65,7 @@ export default function SectionFilter({section}) {
 
           // return null;
         })}
-      </ul>
+      </motion.ul>
     </motion.div>
   );
 }

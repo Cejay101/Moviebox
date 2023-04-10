@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
+:root {
+  --primary-color: rgb(93, 114, 210);
+}
+
 /* reset & common styles */
 body,
 ul,
@@ -21,8 +25,6 @@ div {
   text-align: none;
 }
 body {
-  background: rgb(100, 0, 123);
-  background: -moz-linear-gradient(red, green);
   background: radial-gradient(
     circle,
     rgb(206, 206, 207) 0%,
@@ -66,7 +68,7 @@ header .title {
   flex-grow: 1;
   margin-left: 20px;
   font-size: 0.8rem;
-  border-bottom: 1px solid rgba(16, 15, 15, 0.2);
+  border-bottom: 1px solid var(--primary-color);
   padding-bottom: 10px;
 }
 header .title h1 a{
@@ -77,6 +79,11 @@ header ul {
   display: flex;
   gap: 2rem;
   font-size: large;
+}
+
+header ul a:hover, 
+header ul a.active{
+  color:var(--primary-color);
 }
 
 /* pages */
@@ -108,7 +115,7 @@ header ul {
   position: relative;
 }
 .news-grid li .section {
-  background: black;
+  background:var(--primary-color);
   color: white;
   padding: 5px 10px;
   font-size: 12px;
@@ -122,9 +129,9 @@ header ul {
 .news-grid li .read {
   background-color: rgb(255, 255, 255);
   padding: 2px 10px;
-  box-shadow: -3px -3px 2px rgb(0, 0, 0);
+  box-shadow: -1px -1px 5px var(--primary-color);
   margin: 1rem 0 2rem;
-  border: 2px rgb(0, 0, 0) solid;
+  border: 2px var(--primary-color) solid;
 }
 .news-grid li p {
   display: block;
@@ -201,9 +208,13 @@ footer ul {
   justify-content: center;
   gap: 1rem;
 }
+footer ul a{
+  /* padding: 1rem; */
+color: var(--primary-color);
+}
 
 .back-to-top:hover {
-  background-color: #8aa3f4;
+  background-color:var(--primary-color);
 
   animation: rotation 1s infinite linear;
 }

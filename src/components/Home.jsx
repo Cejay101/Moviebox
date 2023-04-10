@@ -41,21 +41,34 @@ export default function SectionFilter() {
   };
 
   return (
-    <motion.div variants={varient} initial="hidden" animate="visible" exit='exit'>
-      {!isLoading&&<form className=" search" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="what are you looking for?"
-          onChange={(e) => setSearch(e.target.value)}
-          value={search}
-          required
-        />
-        <button>Submit</button>
-      </form>}
+    <motion.div
+      variants={varient}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
+      {!isLoading && (
+        <form className=" search" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="what are you looking for?"
+            onChange={(e) => setSearch(e.target.value)}
+            value={search}
+            required
+          />
+          <button>Submit</button>
+        </form>
+      )}
       <div className="home container">
         {isLoading && <p>Loading...</p>}
         {error && <p>Error: {error.message}</p>}
-        <ul className="news-grid">
+        <motion.ul
+          variants={varient}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          className="news-grid"
+        >
           {news.map((newsItem) => {
             const imageUrl = newsItem.multimedia
               ? getImageUrl(newsItem.multimedia)
@@ -79,7 +92,7 @@ export default function SectionFilter() {
               </li>
             );
           })}
-        </ul>
+        </motion.ul>
       </div>
     </motion.div>
   );

@@ -1,18 +1,28 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 const Header = () => {
   const headerVariants = {
-    hidden:{y:'-100vh'},
-    visible:{y:0, transparent:{ type: "spring", stiffness: 1 }, when:"beforeChildren"}
-  }
+    hidden: { y: "-100vh" },
+    visible: {
+      y: 0,
+      transparent: { type: "spring", stiffness: 1 },
+      when: "beforeChildren",
+    },
+  };
   const svgVariants = {
-    hidden: { scale: 0, rotate: -760 },
+    hidden: { scale: 0, y: "-100vh" },
 
     visible: {
-      rotate: 0,
-      transition: { duration: 1.5 },
+      y: 0,
+      transition: {
+        duration: 0.5,
+        type: "spring",
+        stiffness: 10000,
+        mass: 1,
+        damping: 9,
+      },
       scale: 1,
     },
   };
@@ -33,7 +43,7 @@ const Header = () => {
   return (
     <header>
       <div className="title">
-        <motion.h1 variants={headerVariants} initial='hidden' animate='visible'>
+        <motion.h1 variants={headerVariants} initial="hidden" animate="visible">
           <Link to="/">
             <span>CJ NEWS </span>
             <motion.svg
@@ -44,6 +54,7 @@ const Header = () => {
               width="30px"
               height="30px"
               viewBox="0 0 64 64"
+              color='red'
               enable-background="new 0 0 64 64"
             >
               <path
@@ -76,19 +87,19 @@ const Header = () => {
 
         <ul>
           <li>
-            <Link to="/sport">Sports</Link>
+            <NavLink to="/sport">Sports</NavLink>
           </li>
           <li>
-            <Link to="/world">World</Link>
+            <NavLink to="/world">World</NavLink>
           </li>
           <li>
-            <Link to="/business">Business</Link>
+            <NavLink to="/business">Business</NavLink>
           </li>
           <li>
-            <Link to="/technology">Technology</Link>
+            <NavLink to="/technology">Technology</NavLink>
           </li>
           <li>
-            <Link to="/health">Food</Link>
+            <NavLink to="/health">Food</NavLink>
           </li>
           <li></li>
         </ul>
