@@ -74,6 +74,12 @@ const Header = () => {
 
         <ul>
           <li>
+            <NavLink to="/technology">Technology</NavLink>
+          </li>
+          <li>
+            <NavLink to="/world">World</NavLink>
+          </li>
+          <li>
             <NavLink exact to="/">
               Home
             </NavLink>
@@ -82,16 +88,8 @@ const Header = () => {
             <NavLink to="/sport">Sports</NavLink>
           </li>
           <li>
-            <NavLink to="/world">World</NavLink>
-          </li>
-          <li>
             <NavLink to="/business">Business</NavLink>
           </li>
-          <li>
-            <NavLink to="/technology">Technology</NavLink>
-          </li>
-
-          <li></li>
         </ul>
       </div>
     </header>
