@@ -60,7 +60,7 @@ export default function SectionFilter() {
         </form>
       )}
       <div className="home container">
-        {isLoading && <p>Loading...</p>}
+        {isLoading && <div className="loading">Loading...</div>}
         {error && <p>Error: {error.message}</p>}
         <motion.ul
           variants={varient}
@@ -79,7 +79,9 @@ export default function SectionFilter() {
                 <div>
                   <h2>{newsItem.headline.main}</h2>
                   <button className="read">
-                    <Link to={newsItem.web_url}>Read</Link>{" "}
+                    <a href={newsItem.web_url} target="_blank">
+                      Read
+                    </a>
                   </button>
                   <img src={imageUrl} alt={newsItem.headline.main} />
                   <button

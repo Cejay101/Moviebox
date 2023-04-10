@@ -4,24 +4,24 @@ import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 const Header = () => {
   const headerVariants = {
-    hidden: { y: "-100vh" },
+    hidden: { x: "-100vw" },
     visible: {
-      y: 0,
-      transparent: { type: "spring", stiffness: 1 },
+      x: 0,
+      transparent: { type: "spring", stiffness: 10000000 },
       when: "beforeChildren",
     },
   };
   const svgVariants = {
-    hidden: { scale: 0, y: "-100vh" },
+    hidden: { scale: 0, x: "-100vw" },
 
     visible: {
-      y: 0,
+      x: 0,
       transition: {
         duration: 0.5,
         type: "spring",
-        stiffness: 10000,
-        mass: 1,
-        damping: 9,
+        stiffness: 10000000,
+        mass: 0.5,
+        damping: 10,
       },
       scale: 1,
     },

@@ -34,7 +34,7 @@ export default function SectionFilter({section}) {
       exit="exit"
       className="home container"
     >
-      {isLoading && <p>Loading...</p>}
+      {isLoading && <div className="loading">Loading...</div>}
       {error && <p>Error: {error.message}</p>}
       <motion.ul
         variants={varient}
@@ -54,7 +54,9 @@ export default function SectionFilter({section}) {
               <div>
                 <h2>{newsItem.title}</h2>
                 <button className="read">
-                  <Link to={newsItem.url}>Read</Link>{" "}
+                  <a href={newsItem.url} target="_blank">
+                    Read
+                  </a>
                 </button>
                 <img src={imageUrl} alt={newsItem.title} />
                 <button className="section">{newsItem.section}</button>
