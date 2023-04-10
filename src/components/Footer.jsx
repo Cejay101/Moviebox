@@ -13,24 +13,24 @@ export default function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faTwitter} size="2x" />
+          <FontAwesomeIcon icon={faTwitter}  />
         </a>
         <a
           href="https://www.linkedin.com/in/clinton-joy-538804244/"
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
+          <FontAwesomeIcon icon={faLinkedinIn}  />
         </a>
         <a
           href="https://github.com/Cejay101/portfolio"
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={faGithub} size="2x" />
+          <FontAwesomeIcon icon={faGithub}  />
         </a>
         <a href="https://cejay.hashnode.dev/" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon size="2x" icon={faHashnode} />
+          <FontAwesomeIcon  icon={faHashnode} />
         </a>
       </ul>
       <div className="copyrights">
