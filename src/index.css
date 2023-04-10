@@ -156,8 +156,8 @@ header ul a.active{
   margin: 0px auto;
 }
 .search input {
-  /* margin: 0 2rem; */
   border: none;
+  border-radius: none;
   width: 100%;
   padding: 1rem 0 1rem 1rem;
   font-family: "Lato", sans-serif;
