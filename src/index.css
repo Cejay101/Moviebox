@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 :root {
-  --primary-color: rgb(93, 114, 210);
+  --primary-color: red;
 }
 
 /* reset & common styles */
@@ -133,7 +133,7 @@ header ul a.active{
 .news-grid li .read {
   background-color: rgb(255, 255, 255);
   padding: 2px 10px;
-  box-shadow: -1px -1px 5px var(--primary-color);
+  box-shadow: -0px -0px 5px var(--primary-color);
   margin: 1rem 0 2rem;
   border: 2px var(--primary-color) solid;
 }
