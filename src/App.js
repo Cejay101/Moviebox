@@ -5,7 +5,6 @@ import Home from './components/Home';
 import Business from './components/Business';
 import Sport from './components/Sport';
 import World from './components/World';
-import Health from './components/Food';
 import Technology from './components/Technology';
 import BackToTopButton from './components/backToTop';
 import Footer from './components/Footer';
@@ -28,9 +27,6 @@ function App() {
         </Route>
         <Route path="/world">
           <World />
-        </Route>
-        <Route path="/health">
-          <Health />
         </Route>
         <Route path="/technology">
           <Technology />

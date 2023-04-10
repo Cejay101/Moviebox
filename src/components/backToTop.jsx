@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { faArrowCircleUp } from "@fortawesome/free-solid-svg-icons";
 
 
 const BackToTopButton = () => {
@@ -35,7 +35,7 @@ const BackToTopButton = () => {
     <>
       {isVisible && (
         <button onClick={scrollToTop} className="back-to-top">
-          <FontAwesomeIcon icon={faPaperPlane} className="icon" ></FontAwesomeIcon>
+          <FontAwesomeIcon icon={faArrowCircleUp} className="icon" ></FontAwesomeIcon>
 
         </button>
       )}

@@ -17,8 +17,6 @@ div {
   margin: 0;
   padding: 0;
   color: rgb(2, 2, 2);
-  font-family: "Quicksand";
-  /* letter-spacing: 2px; */
   list-style-type: none;
   text-decoration: none;
   font-family: "Lato", sans-serif;
@@ -96,7 +94,6 @@ header ul a.active{
 }
 .home.container,
 .order.container {
-  /* text-align: center; */
   max-width: 1600px;
 }
 
@@ -144,12 +141,9 @@ header ul a.active{
   display: block;
   margin: auto;
   width: 100%;
-  /* height: 3rem; */
 }
 
 .search {
-  /* display: flex;
-  justify-content: center; */
   position: relative;
   width: 90%;
   max-width: 1200px;
@@ -203,7 +197,7 @@ header ul a.active{
 }
 footer {
   width: 80%;
-  margin: auto;
+  margin:3rem auto;
   text-align: center;position: static;
   bottom: 0;
 }
@@ -213,8 +207,7 @@ footer ul {
   gap: 1rem;
 }
 footer ul a{
-  /* padding: 1rem; */
-color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .back-to-top:hover {

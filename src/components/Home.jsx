@@ -27,7 +27,6 @@ export default function SectionFilter() {
     await setSearch(inputs);
     await setInput(search);
     setSearch("");
-    // console.log(inputs);
   };
   const varient = {
     hidden: { opacity: 0, x: "100vw" },

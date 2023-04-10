@@ -3,6 +3,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 const Header = () => {
+  //Using Framer motion
   const headerVariants = {
     hidden: { x: "-100vw" },
     visible: {
@@ -27,7 +28,6 @@ const Header = () => {
     },
   };
 
-  
   return (
     <header>
       <div className="title">
@@ -42,11 +42,10 @@ const Header = () => {
               width="30px"
               height="30px"
               viewBox="0 0 64 64"
-              color='red'
+              color="red"
               enable-background="new 0 0 64 64"
             >
               <path
-                
                 fill="#231F20"
                 d="M32,0C14.327,0,0,14.327,0,32s14.327,32,32,32s32-14.327,32-32S49.673,0,32,0z M49.972,31
 	c-0.138-5.582-1.414-10.878-3.613-15.667c2.652-1.022,5.169-2.317,7.515-3.854c4.824,5.14,7.854,11.976,8.102,19.521H49.972z
@@ -75,6 +74,11 @@ const Header = () => {
 
         <ul>
           <li>
+            <NavLink exact to="/">
+              Home
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/sport">Sports</NavLink>
           </li>
           <li>
@@ -86,9 +90,7 @@ const Header = () => {
           <li>
             <NavLink to="/technology">Technology</NavLink>
           </li>
-          <li>
-            <NavLink to="/health">Food</NavLink>
-          </li>
+
           <li></li>
         </ul>
       </div>
