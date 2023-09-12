@@ -1,3 +1,4 @@
+
 .navbar{
    border-bottom: gray 2px solid;
    display: flex;
@@ -14,4 +15,7 @@
     background-color: red;
     padding: 0.5rem;
     border-radius: 50%;
+}
+form{
+     width: 80%;
 }
